@@ -12,7 +12,3 @@ fi
 
 # add user installed cargo
 source "$HOME/.cargo/env"
-
-# disable WINE desktop integration for newly created WINE prefixes
-export WINEDLLOVERRIDES=winemenubuilder.exe=d
-
