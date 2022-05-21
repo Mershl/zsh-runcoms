@@ -11,3 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+alias mpv='flatpak run io.mpv.Mpv'
+alias meld='flatpak run org.gnome.meld'
+alias lutris='flatpak run net.lutris.Lutris'
