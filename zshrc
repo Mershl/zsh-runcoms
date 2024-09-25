@@ -14,6 +14,7 @@ fi
 alias mpv='flatpak run io.mpv.Mpv'
 alias meld='flatpak run org.gnome.meld'
 alias lutris='flatpak run net.lutris.Lutris'
+alias ffmpeg='flatpak run --command=ffmpeg --filesystem=home net.lutris.Lutris'
 
 ffmpeg_resize () {
     file=$1
