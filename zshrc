@@ -16,6 +16,9 @@ alias meld='flatpak run org.gnome.meld'
 alias lutris='flatpak run net.lutris.Lutris'
 # alias ffmpeg='flatpak run --command=ffmpeg --filesystem=home net.lutris.Lutris'
 alias streamlink='streamlink --twitch-disable-ads --player /var/lib/flatpak/exports/bin/io.mpv.Mpv'
+alias yt-dlp='pip install yt-dlp --user --upgrade; yt-dlp'
+alias yt-dlp-mp4='yt-dlp --recode-video mp4'
+# ^TODO: find a way to pass recode arguments to yt-dlp `-movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2"`
 
 ffmpeg_resize () {
     file=$1
