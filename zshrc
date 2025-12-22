@@ -11,10 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-alias mpv='flatpak run io.mpv.Mpv'
-alias vlc='flatpak run org.videolan.VLC'
-alias meld='flatpak run org.gnome.meld'
-alias lutris='flatpak run net.lutris.Lutris'
+# alias mpv='flatpak run io.mpv.Mpv'
+# alias vlc='flatpak run org.videolan.VLC'
+# alias meld='flatpak run org.gnome.meld'
+# alias lutris='flatpak run net.lutris.Lutris'
 # alias ffmpeg='flatpak run --command=ffmpeg --filesystem=home net.lutris.Lutris'
 alias streamlink='pip install streamlink --user --upgrade; streamlink --player /var/lib/flatpak/exports/bin/org.videolan.VLC'
 alias yt-dlp='pip install yt-dlp --user --upgrade; yt-dlp'
