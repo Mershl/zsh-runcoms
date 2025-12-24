@@ -11,7 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-alias nixos-update='sudo nix-channel --update && sudo nixos-rebuild switch --upgrade && echo && nix store diff-closures $(ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 2)'
+alias nixos-update='sudo nixos-rebuild switch --upgrade && echo && nix store diff-closures $(ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 2)'
 
 # alias mpv='flatpak run io.mpv.Mpv'
 # alias vlc='flatpak run org.videolan.VLC'
