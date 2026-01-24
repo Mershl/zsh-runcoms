@@ -13,6 +13,8 @@ fi
 # Customize to your needs...
 alias nixos-update='sudo nixos-rebuild switch --upgrade && echo && nix store diff-closures $(ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 2)'
 alias nixos-update-boot='sudo nixos-rebuild boot --upgrade && echo && nix store diff-closures $(ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 2)'
+alias nixos-current-generation='readlink /nix/var/nix/profiles/system'
+alias nixos-list-generations='nixos-rebuild list-generations'
 
 # alias mpv='flatpak run io.mpv.Mpv'
 # alias vlc='flatpak run org.videolan.VLC'
